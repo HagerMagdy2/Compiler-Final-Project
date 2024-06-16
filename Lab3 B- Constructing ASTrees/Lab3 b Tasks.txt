@@ -1,0 +1,8 @@
+Construct AST for Lab3 Task and use it with a simple java GUI that contains:
+Input String [Text Area]
+From File [Button]
+Compile [Button]
+Errors [Text Area]
+Program Trace [Text Area]
+
+such that the user enters the string in "Input String" or from file and when pressing "Compile" the corresponding parse tree appears and the errors (if exist) appear in "Errors" field or "Compiled Successfully" message.

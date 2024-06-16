@@ -1,0 +1,213 @@
+digraph {
+
+	ordering=out;
+	ranksep=.4;
+	bgcolor="0 .4 .7"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="black"
+		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, bold"];
+	edge [arrowsize=.5, color="black", style="bold"]
+
+  n0 [label="Start"];
+  n1 [label="ClassDec"];
+  n1 [label="ClassDec"];
+  n2 [label="class"];
+  n3 [label="Factorial"];
+  n4 [label="{"];
+  n5 [label="Main"];
+  n5 [label="Main"];
+  n6 [label="public"];
+  n7 [label="static"];
+  n8 [label="void"];
+  n9 [label="main"];
+  n10 [label="("];
+  n11 [label="String"];
+  n12 [label="[]"];
+  n13 [label="a"];
+  n14 [label=")"];
+  n15 [label="{"];
+  n16 [label="Print"];
+  n16 [label="Print"];
+  n17 [label="System"];
+  n18 [label=".out"];
+  n19 [label=".println"];
+  n20 [label="("];
+  n21 [label="new"];
+  n22 [label="Fac"];
+  n23 [label="("];
+  n24 [label=")"];
+  n25 [label="."];
+  n26 [label="ComputeFac"];
+  n27 [label="("];
+  n28 [label="10"];
+  n29 [label=")"];
+  n30 [label=")"];
+  n31 [label=";"];
+  n32 [label="}"];
+  n33 [label="}"];
+  n34 [label="ClassDec"];
+  n34 [label="ClassDec"];
+  n35 [label="class"];
+  n36 [label="Fac"];
+  n37 [label="{"];
+  n38 [label="Method"];
+  n38 [label="Method"];
+  n39 [label="public"];
+  n40 [label="int"];
+  n41 [label="ComputeFac"];
+  n42 [label="("];
+  n43 [label="int"];
+  n44 [label="num"];
+  n45 [label=")"];
+  n46 [label="{"];
+  n47 [label="Decl"];
+  n47 [label="Decl"];
+  n48 [label="Int_dec"];
+  n48 [label="Int_dec"];
+  n49 [label="int"];
+  n50 [label="num_aux"];
+  n51 [label=";"];
+  n52 [label="Ifstmt"];
+  n52 [label="Ifstmt"];
+  n53 [label="if"];
+  n54 [label="("];
+  n55 [label="Factor"];
+  n55 [label="Factor"];
+  n56 [label="num"];
+  n57 [label="<"];
+  n58 [label="Factor"];
+  n58 [label="Factor"];
+  n59 [label="1"];
+  n60 [label=")"];
+  n61 [label="Assigment"];
+  n61 [label="Assigment"];
+  n62 [label="num_aux"];
+  n63 [label="="];
+  n64 [label="Factor"];
+  n64 [label="Factor"];
+  n65 [label="1"];
+  n66 [label=";"];
+  n67 [label="else"];
+  n68 [label="Assigment"];
+  n68 [label="Assigment"];
+  n69 [label="num_aux"];
+  n70 [label="="];
+  n71 [label="*"];
+  n71 [label="*"];
+  n72 [label="Factor"];
+  n72 [label="Factor"];
+  n73 [label="num"];
+  n74 [label="("];
+  n75 [label="this"];
+  n76 [label="."];
+  n77 [label="ComputeFac"];
+  n78 [label="("];
+  n79 [label="-"];
+  n79 [label="-"];
+  n80 [label="Factor"];
+  n80 [label="Factor"];
+  n81 [label="num"];
+  n82 [label="Factor"];
+  n82 [label="Factor"];
+  n83 [label="1"];
+  n84 [label=")"];
+  n85 [label=")"];
+  n86 [label=";"];
+  n87 [label="num_aux"];
+  n87 [label="num_aux"];
+  n88 [label="return"];
+  n89 [label=";"];
+  n90 [label="}"];
+  n91 [label="}"];
+
+  n0 -> n1 // "Start" -> "ClassDec"
+  n1 -> n2 // "ClassDec" -> "class"
+  n1 -> n3 // "ClassDec" -> "Factorial"
+  n1 -> n4 // "ClassDec" -> "{"
+  n1 -> n5 // "ClassDec" -> "Main"
+  n5 -> n6 // "Main" -> "public"
+  n5 -> n7 // "Main" -> "static"
+  n5 -> n8 // "Main" -> "void"
+  n5 -> n9 // "Main" -> "main"
+  n5 -> n10 // "Main" -> "("
+  n5 -> n11 // "Main" -> "String"
+  n5 -> n12 // "Main" -> "[]"
+  n5 -> n13 // "Main" -> "a"
+  n5 -> n14 // "Main" -> ")"
+  n5 -> n15 // "Main" -> "{"
+  n5 -> n16 // "Main" -> "Print"
+  n16 -> n17 // "Print" -> "System"
+  n16 -> n18 // "Print" -> ".out"
+  n16 -> n19 // "Print" -> ".println"
+  n16 -> n20 // "Print" -> "("
+  n16 -> n21 // "Print" -> "new"
+  n16 -> n22 // "Print" -> "Fac"
+  n16 -> n23 // "Print" -> "("
+  n16 -> n24 // "Print" -> ")"
+  n16 -> n25 // "Print" -> "."
+  n16 -> n26 // "Print" -> "ComputeFac"
+  n16 -> n27 // "Print" -> "("
+  n16 -> n28 // "Print" -> "10"
+  n16 -> n29 // "Print" -> ")"
+  n16 -> n30 // "Print" -> ")"
+  n16 -> n31 // "Print" -> ";"
+  n5 -> n32 // "Main" -> "}"
+  n1 -> n33 // "ClassDec" -> "}"
+  n0 -> n34 // "Start" -> "ClassDec"
+  n34 -> n35 // "ClassDec" -> "class"
+  n34 -> n36 // "ClassDec" -> "Fac"
+  n34 -> n37 // "ClassDec" -> "{"
+  n34 -> n38 // "ClassDec" -> "Method"
+  n38 -> n39 // "Method" -> "public"
+  n38 -> n40 // "Method" -> "int"
+  n38 -> n41 // "Method" -> "ComputeFac"
+  n38 -> n42 // "Method" -> "("
+  n38 -> n43 // "Method" -> "int"
+  n38 -> n44 // "Method" -> "num"
+  n38 -> n45 // "Method" -> ")"
+  n38 -> n46 // "Method" -> "{"
+  n38 -> n47 // "Method" -> "Decl"
+  n47 -> n48 // "Decl" -> "Int_dec"
+  n48 -> n49 // "Int_dec" -> "int"
+  n48 -> n50 // "Int_dec" -> "num_aux"
+  n48 -> n51 // "Int_dec" -> ";"
+  n38 -> n52 // "Method" -> "Ifstmt"
+  n52 -> n53 // "Ifstmt" -> "if"
+  n52 -> n54 // "Ifstmt" -> "("
+  n52 -> n55 // "Ifstmt" -> "Factor"
+  n55 -> n56 // "Factor" -> "num"
+  n52 -> n57 // "Ifstmt" -> "<"
+  n52 -> n58 // "Ifstmt" -> "Factor"
+  n58 -> n59 // "Factor" -> "1"
+  n52 -> n60 // "Ifstmt" -> ")"
+  n52 -> n61 // "Ifstmt" -> "Assigment"
+  n61 -> n62 // "Assigment" -> "num_aux"
+  n61 -> n63 // "Assigment" -> "="
+  n61 -> n64 // "Assigment" -> "Factor"
+  n64 -> n65 // "Factor" -> "1"
+  n61 -> n66 // "Assigment" -> ";"
+  n52 -> n67 // "Ifstmt" -> "else"
+  n52 -> n68 // "Ifstmt" -> "Assigment"
+  n68 -> n69 // "Assigment" -> "num_aux"
+  n68 -> n70 // "Assigment" -> "="
+  n68 -> n71 // "Assigment" -> "*"
+  n71 -> n72 // "*" -> "Factor"
+  n72 -> n73 // "Factor" -> "num"
+  n71 -> n74 // "*" -> "("
+  n71 -> n75 // "*" -> "this"
+  n71 -> n76 // "*" -> "."
+  n71 -> n77 // "*" -> "ComputeFac"
+  n71 -> n78 // "*" -> "("
+  n71 -> n79 // "*" -> "-"
+  n79 -> n80 // "-" -> "Factor"
+  n80 -> n81 // "Factor" -> "num"
+  n79 -> n82 // "-" -> "Factor"
+  n82 -> n83 // "Factor" -> "1"
+  n71 -> n84 // "*" -> ")"
+  n71 -> n85 // "*" -> ")"
+  n68 -> n86 // "Assigment" -> ";"
+  n38 -> n87 // "Method" -> "num_aux"
+  n87 -> n88 // "num_aux" -> "return"
+  n87 -> n89 // "num_aux" -> ";"
+  n38 -> n90 // "Method" -> "}"
+  n34 -> n91 // "ClassDec" -> "}"
+
+}

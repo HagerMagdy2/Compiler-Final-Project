@@ -1,0 +1,141 @@
+digraph {
+
+	ordering=out;
+	ranksep=.4;
+	bgcolor="0 .4 .7"; node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="black"
+		width=.25, height=.25, color="black", fillcolor="white", style="filled, solid, bold"];
+	edge [arrowsize=.5, color="black", style="bold"]
+
+  n0 [label="Start"];
+  n1 [label="Body"];
+  n1 [label="Body"];
+  n2 [label="Print"];
+  n2 [label="Print"];
+  n3 [label="println"];
+  n4 [label="<<"];
+  n5 [label="\"welcom...guage!\""];
+  n6 [label=";"];
+  n7 [label="Decl"];
+  n7 [label="Decl"];
+  n8 [label="x"];
+  n9 [label="="];
+  n10 [label="4"];
+  n11 [label=";"];
+  n12 [label="Print"];
+  n12 [label="Print"];
+  n13 [label="println"];
+  n14 [label="<<"];
+  n15 [label="\"x=\""];
+  n16 [label="<<"];
+  n17 [label="x"];
+  n18 [label=";"];
+  n19 [label="Input"];
+  n19 [label="Input"];
+  n20 [label="y"];
+  n21 [label="="];
+  n22 [label="input"];
+  n23 [label="("];
+  n24 [label="\"Enter an integer\""];
+  n25 [label=")"];
+  n26 [label=";"];
+  n27 [label="If"];
+  n27 [label="If"];
+  n28 [label="if"];
+  n29 [label="mod"];
+  n30 [label="("];
+  n31 [label="y"];
+  n32 [label=","];
+  n33 [label="2"];
+  n34 [label=")"];
+  n35 [label="=="];
+  n36 [label="0"];
+  n37 [label="println"];
+  n38 [label="<<"];
+  n39 [label="y"];
+  n40 [label="<<"];
+  n41 [label="\"is even\""];
+  n42 [label=";"];
+  n43 [label="else"];
+  n44 [label="println"];
+  n45 [label="<<"];
+  n46 [label="y"];
+  n47 [label="<<"];
+  n48 [label="\"is odd\""];
+  n49 [label=";"];
+  n50 [label="end"];
+  n51 [label="Print"];
+  n51 [label="Print"];
+  n52 [label="println"];
+  n53 [label="<<"];
+  n54 [label="\"x=\""];
+  n55 [label="<<"];
+  n56 [label="x"];
+  n57 [label="<<"];
+  n58 [label="\"and y\""];
+  n59 [label="<<"];
+  n60 [label="y"];
+  n61 [label=";"];
+
+  n0 -> n1 // "Start" -> "Body"
+  n1 -> n2 // "Body" -> "Print"
+  n2 -> n3 // "Print" -> "println"
+  n2 -> n4 // "Print" -> "<<"
+  n2 -> n5 // "Print" -> "\"welcom...guage!\""
+  n2 -> n6 // "Print" -> ";"
+  n1 -> n7 // "Body" -> "Decl"
+  n7 -> n8 // "Decl" -> "x"
+  n7 -> n9 // "Decl" -> "="
+  n7 -> n10 // "Decl" -> "4"
+  n7 -> n11 // "Decl" -> ";"
+  n1 -> n12 // "Body" -> "Print"
+  n12 -> n13 // "Print" -> "println"
+  n12 -> n14 // "Print" -> "<<"
+  n12 -> n15 // "Print" -> "\"x=\""
+  n12 -> n16 // "Print" -> "<<"
+  n12 -> n17 // "Print" -> "x"
+  n12 -> n18 // "Print" -> ";"
+  n1 -> n19 // "Body" -> "Input"
+  n19 -> n20 // "Input" -> "y"
+  n19 -> n21 // "Input" -> "="
+  n19 -> n22 // "Input" -> "input"
+  n19 -> n23 // "Input" -> "("
+  n19 -> n24 // "Input" -> "\"Enter an integer\""
+  n19 -> n25 // "Input" -> ")"
+  n19 -> n26 // "Input" -> ";"
+  n1 -> n27 // "Body" -> "If"
+  n27 -> n28 // "If" -> "if"
+  n27 -> n29 // "If" -> "mod"
+  n27 -> n30 // "If" -> "("
+  n27 -> n31 // "If" -> "y"
+  n27 -> n32 // "If" -> ","
+  n27 -> n33 // "If" -> "2"
+  n27 -> n34 // "If" -> ")"
+  n27 -> n35 // "If" -> "=="
+  n27 -> n36 // "If" -> "0"
+  n27 -> n37 // "If" -> "println"
+  n27 -> n38 // "If" -> "<<"
+  n27 -> n39 // "If" -> "y"
+  n27 -> n40 // "If" -> "<<"
+  n27 -> n41 // "If" -> "\"is even\""
+  n27 -> n42 // "If" -> ";"
+  n27 -> n43 // "If" -> "else"
+  n27 -> n44 // "If" -> "println"
+  n27 -> n45 // "If" -> "<<"
+  n27 -> n46 // "If" -> "y"
+  n27 -> n47 // "If" -> "<<"
+  n27 -> n48 // "If" -> "\"is odd\""
+  n27 -> n49 // "If" -> ";"
+  n27 -> n50 // "If" -> "end"
+  n1 -> n51 // "Body" -> "Print"
+  n51 -> n52 // "Print" -> "println"
+  n51 -> n53 // "Print" -> "<<"
+  n51 -> n54 // "Print" -> "\"x=\""
+  n51 -> n55 // "Print" -> "<<"
+  n51 -> n56 // "Print" -> "x"
+  n51 -> n57 // "Print" -> "<<"
+  n51 -> n58 // "Print" -> "\"and y\""
+  n51 -> n59 // "Print" -> "<<"
+  n51 -> n60 // "Print" -> "y"
+  n51 -> n61 // "Print" -> ";"
+
+}
